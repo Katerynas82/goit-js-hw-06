@@ -21,7 +21,7 @@ console.log(container);
 const markup = images
   .map(
     ({ alt, url }) =>
-      `<li class=js-item> <img class ="js-fbox-img" src=${url} alt=${alt}></img></li>`
+      `<li class=js-item> <img class ="js-style-img" src=${url} alt=${alt}></img></li>`
   )
   .join("");
 container.insertAdjacentHTML("afterbegin", markup);
