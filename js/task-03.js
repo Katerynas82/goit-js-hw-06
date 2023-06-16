@@ -15,15 +15,17 @@ const images = [
 
 const container = document.querySelector(".gallery");
 
-console.log(container);
-
-// images.forEach(function (image) {
 const markup = images
   .map(
     ({ alt, url }) =>
-      `<li class=js-item> <img class ="js-style-img" src=${url} alt=${alt}></img></li>`
-  )
-  .join("");
-container.insertAdjacentHTML("afterbegin", markup);
+      `<li class=js-item><img class ="js-style-img" src=${url} alt=${alt} width=300; height=200 ></img></li>`
+  ).join("");
+container.style.cssText = `list-style: none; 
+padding: 0; 
+display: flex; 
+flex-wrap: wrap; 
+justify-content: 
+space-around; 
+gap: 24px;`;
 
-console.log(markup);
+container.insertAdjacentHTML("afterbegin", markup);

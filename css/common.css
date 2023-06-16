@@ -22,15 +22,3 @@ button {
   padding: 8px 12px;
   cursor: pointer;
 }
-
-/* Завдання 3 */
-
-ul {
-list-style: none;
-}
-  
-.js-fbox-img {
-  margin: 25px 25px;
-  width: 550px;
-  height: 350px;
-}

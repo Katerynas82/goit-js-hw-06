@@ -17,15 +17,16 @@ const ingredients = [
 // Додасть елементу клас item.
 // Після чого, вставить усі <li> за одну операцію у список ul#ingredients.
 
-const ul = document.getElementById("ingredients");
-ingredients.forEach(function (ingredient) {
+const listEl = document.getElementById("ingredients");
+
+ingredients.map(function (ingredient) {
   const itemIngEl = document.createElement("li");
 
   itemIngEl.classList.add("item");
 
-  const nameIng = ingredient;
-  itemIngEl.textContent = nameIng;
+  itemIngEl.textContent = ingredient;
 
   console.log("itemIngEl", itemIngEl);
-  ul.appendChild(itemIngEl);
+
+  listEl.append(itemIngEl);
 });

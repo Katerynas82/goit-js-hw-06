@@ -2,8 +2,6 @@
 
 // Напиши скрипт, який змінює кольори фону елемента <body> через інлайн-стиль по кліку на button.change-color і виводить значення кольору в span.color.
 
-const bodyStyle = document.querySelector("body");
-
 const typeColor = document.querySelector(".color");
 
 const btnChangeColor = document.querySelector(".change-color");
@@ -11,7 +9,7 @@ const btnChangeColor = document.querySelector(".change-color");
 btnChangeColor.addEventListener("click", () => {
   const colorEl = getRandomHexColor();
 
-  bodyStyle.style.backgroundColor = colorEl;
+  document.body.style.backgroundColor = colorEl;
 
   typeColor.textContent = colorEl;
 

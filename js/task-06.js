@@ -5,10 +5,10 @@
 // Для додавання стилів використовуй CSS-класи valid і invalid, які ми вже додали у вихідні файли завдання.
 
 const inputEl = document.querySelector("input");
-// const input = document.querySelector('input');
 
 inputEl.addEventListener("blur", function () {
   const lengthEl = this.value.length;
+ 
   const requiredLength = parseInt(this.getAttribute("data-length"));
 
   if (lengthEl === requiredLength) {

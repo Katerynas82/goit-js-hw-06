@@ -16,18 +16,10 @@
 // Elements: 5
 const categoryEl = document.querySelectorAll(".item");
 
-const arrLength = categoryEl.length;
-
-const message = `Number of categories: ${arrLength}`;
-
-console.log(message);
+console.log(`Number of categories: ${categoryEl.length}`);
 
 categoryEl.forEach(function (number, index) {
-  const hedText = categoryEl[index].querySelector("h2").textContent;
+  console.dir(`Category: ${categoryEl[index].querySelector("h2").textContent}`);
 
-  console.dir(`Category: ${hedText}`);
-
-  const itemLiEl = categoryEl[index].querySelectorAll("li");
-
-  console.log(`Elements: ${itemLiEl.length}`);
+  console.log(`Elements: ${categoryEl[index].querySelectorAll("li").length}`);
 });

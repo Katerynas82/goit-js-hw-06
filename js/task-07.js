@@ -7,4 +7,3 @@ const styleText = document.getElementById("text");
 inputEl.addEventListener("input", function () {
   styleText.style.fontSize = inputEl.value + "px";
 });
-console.log(inputEl);

@@ -8,7 +8,7 @@
 const formEl = document.querySelector(".login-form");
 
 formEl.addEventListener("submit", onSubmit);
-console.log("ha");
+
 function onSubmit(evt) {
   evt.preventDefault();
 
