@@ -19,14 +19,13 @@ const ingredients = [
 
 const listEl = document.getElementById("ingredients");
 
-ingredients.map(function (ingredient) {
+const ingredientsList = ingredients.map((ingredient) => {
   const itemIngEl = document.createElement("li");
 
   itemIngEl.classList.add("item");
 
   itemIngEl.textContent = ingredient;
 
-  console.log("itemIngEl", itemIngEl);
-
-  listEl.append(itemIngEl);
+  return itemIngEl;
 });
+listEl.append(...ingredientsList);

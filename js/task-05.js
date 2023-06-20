@@ -9,7 +9,7 @@ inputEl.addEventListener("input", onInputChange);
 
 function onInputChange(event) {
   const userName = inputEl.value;
-  messageEl.textContent = event.currentTarget.value;
+
   if (userName.trim() === "") {
     messageEl.textContent = "Anonymous";
   } else {
